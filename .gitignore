@@ -60,4 +60,5 @@ typings/
 .DS_Store
 .idea
 dist
-.tmp/
+/.tmp/
+/.tmp/data.db
