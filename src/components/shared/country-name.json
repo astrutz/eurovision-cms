@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_shared_country_names",
+  "info": {
+    "displayName": "CountryName",
+    "icon": "bold"
+  },
+  "options": {},
+  "attributes": {
+    "German": {
+      "type": "string"
+    },
+    "English": {
+      "type": "string"
+    },
+    "Bengal": {
+      "type": "string"
+    },
+    "Spanish": {
+      "type": "string"
+    },
+    "Farsi": {
+      "type": "string"
+    },
+    "French": {
+      "type": "string"
+    },
+    "Hindi": {
+      "type": "string"
+    },
+    "Italian": {
+      "type": "string"
+    },
+    "Japanese": {
+      "type": "string"
+    },
+    "Javanese": {
+      "type": "string"
+    },
+    "Polish": {
+      "type": "string"
+    },
+    "Portugese": {
+      "type": "string"
+    },
+    "Romanian": {
+      "type": "string"
+    },
+    "Russian": {
+      "type": "string"
+    },
+    "Turkish": {
+      "type": "string"
+    },
+    "Ukrainian": {
+      "type": "string"
+    },
+    "Chinese": {
+      "type": "string"
+    },
+    "Vietnamese": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

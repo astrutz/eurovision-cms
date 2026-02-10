@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entries",
+  "info": {
+    "singularName": "entry",
+    "pluralName": "entries",
+    "displayName": "Entry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "min": 1900,
+      "max": 2050
+    },
+    "place": {
+      "type": "integer",
+      "required": false,
+      "min": 1,
+      "max": 50
+    },
+    "artist": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string",
+      "regex": "^(https?\\:\\/\\/)?((www\\.)?youtube\\.com|youtu\\.be)\\/.+$"
+    },
+    "rating": {
+      "type": "component",
+      "component": "shared.rating",
+      "repeatable": false
+    },
+    "country": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contests",
+  "info": {
+    "singularName": "contest",
+    "pluralName": "contests",
+    "displayName": "Contest"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    },
+    "primaryColor": {
+      "type": "string",
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "secondaryColor": {
+      "type": "string",
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "primaryTextColor": {
+      "type": "string",
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "secondaryTextColor": {
+      "type": "string",
+      "regex": "^#(?:[0-9a-fA-F]{3}){1,2}$"
+    },
+    "entries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::entry.entry"
+    },
+    "hostCountry": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::country.country"
+    }
+  }
+}
